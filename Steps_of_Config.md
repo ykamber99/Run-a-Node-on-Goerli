@@ -6,6 +6,7 @@ There are mainly 3 different methods:
 2. Use eth-docker
 (https://eth-docker.net/docs/About/Overview)
 3. Use docker & docker-compose direcly via a yml file
+This repo is mainly focused on the 1st method.
 
 ## 🔎 Overall Configuration:
 Operating System 👉 Linux(ubuntu 22.04 x64).   
@@ -107,13 +108,24 @@ Then import keystores
 ./prysm.sh validator accounts import --keys-dir=~/ethereum/consensus/validator_keys --prater
 ```
 ❗️❗️A prysm wallet will be generated and here required the **wallet directory to be the path to `consensus` folder** mine is ~ethereum/consensus
-`Successfully imported 1 accounts, view all of them by running accounts list` means account has been successfully imported via Prysm
+`Successfully imported 1 accounts, view all of them by running accounts list` means account has been successfully imported via Prysm.  
+
 
 ### Step6: Deposit and become an real validator🧙🏻‍♀️
-
-
-
-
+#### Download the deposit data file(from Wanting)
+Download the `deposit_data-*.json` file from cloud, run the following code in the local terminal 
+❗️root@**ipv4.address of the ubuntu vm**
+```
+scp root@159.223.180.72:~/ethereum/execution/nohup.out ~
+```
+#### Upload the deposit file to the web page && run the validator
+Upload the deposit file to the [Goerli-Prater deposit data upload page](https://goerli.launchpad.ethereum.org/en/overview). 
+Start the validator
+```
+./prysm.sh validator --wallet-dir=`ethereum/consensus --prater
+```
+Waiting for validator to be activated......😶‍🌫️
+Bingo🥳
 
 
 
