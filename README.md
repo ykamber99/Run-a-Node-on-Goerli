@@ -3,7 +3,8 @@ Here is a breif summary of how to configure an execution & beacon node & validat
 There are mainly 3 different methods:
 1. Use Prysm Documentation. 
 https://docs.prylabs.network/docs/install/install-with-script#step-3-run-an-execution-client. 
-Navigate to **Steps_for_Config.md** for more details
+
+Navigate to **Steps_of_Config.md** for more details
 2. Use eth-docker. 
 https://eth-docker.net/docs/About/Overview
 3. Use docker & docker-compose direcly via a yml file  
