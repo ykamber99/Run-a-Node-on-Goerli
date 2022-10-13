@@ -124,7 +124,8 @@ Start the validator
 ```
 ./prysm.sh validator --wallet-dir=`ethereum/consensus --prater
 ```
-Waiting for validator to be activated......😶‍🌫️
+Waiting for validator to be activated......😶‍🌫️. 
+
 Bingo🥳
 
 
