@@ -51,8 +51,8 @@ sudo apt-get install ethereum
 ```
 
 #### ✔️Geth Execution
-Then navigate to `execution` directory and start the execution node:
-❗️Parameter after `--authrpc.jwtsecret` should be the file path of `jwt.hex` 
+Then navigate to `execution` directory and start the execution node:  
+❗️Parameter after `--authrpc.jwtsecret` should be the file path of `jwt.hex`   
 ❗️`nohup` making geth running in the background and export all the logs in to `nohup.out`
 
 ```
@@ -114,7 +114,7 @@ scp root@159.223.180.72:~/ethereum/execution/nohup.out ~
 Upload the deposit file to the [Goerli-Prater deposit data upload page](https://goerli.launchpad.ethereum.org/en/overview). 
 Start the validator
 ```
-./prysm.sh validator --wallet-dir=`ethereum/consensus --prater
+./prysm.sh validator --wallet-dir=～ethereum/consensus --prater
 ```
 Waiting for validator to be activated......😶‍🌫️. 
 
